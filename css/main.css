@@ -1,0 +1,130 @@
+:root {
+  /* Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral */
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
+  --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: var(--very-light-gray);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  width: 100%;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.main__article {
+  width: 280px;
+  height: 370px;
+  padding: 20px 35px;
+  background-color: var(--bright-orange);
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main__article--two {
+  border-radius: 0;
+  background-color: var(--dark-cyan);
+}
+
+.main__article--three {
+  border-radius: 0 0 10px 10px;
+  background-color: var(--very-dark-cyan);
+}
+
+.main__img {
+  width: 64px;
+  height: 40px;
+}
+
+.main__title {
+  font-size: 3.2rem;
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--very-light-gray);
+}
+
+.main__paragraph {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--transparent-white);
+}
+
+.main__link {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--bright-orange);
+  text-decoration: none;
+  border-radius: 100px;
+  background-color: var(--very-light-gray);
+}
+
+.main__link--two {
+  color: var(--dark-cyan);
+}
+
+.main__link--three {
+  color: var(--very-dark-cyan);
+}
+
+.main__link:hover {
+  color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .main__section {
+    flex-direction: row;
+    margin: 0 20px;
+  }
+
+  .main__article {
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .main__article--two {
+    border-radius: 0;
+  }
+
+  .main__article--three {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .main__paragraph {
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+  }
+}
