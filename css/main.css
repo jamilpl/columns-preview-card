@@ -5,8 +5,8 @@
   --very-dark-cyan: hsl(179, 100%, 13%);
 
   /* Neutral */
-  --transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs) */
-  --very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   background-color: var(--very-light-gray);
   min-height: 100vh;
   display: flex;
@@ -67,7 +67,7 @@ html {
 
 .main__title {
   font-size: 3.2rem;
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: "Big Shoulders Display", cursive;
   color: var(--very-light-gray);
 }
 
